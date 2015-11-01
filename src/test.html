@@ -1,0 +1,22 @@
+<template>
+  <section class="au-animate">
+    <h2>${heading}</h2>
+    <form role="form" submit.delegate="submit()">
+
+      <div class="form-group">
+        <label for="fn">DSL box</label>
+        <input type="text" value.bind="DSL" class="form-control" id="fn" placeholder="enter DSL here">
+      </div>
+
+      <div class="form-group">
+        <label for="ln">Last Name</label>
+        <input type="text" value.bind="lastName" class="form-control" id="ln" placeholder="last name">
+      </div>
+
+      <button type="submit" click.delegate="submit()" class="btn btn-default">Submit</button>
+    </form>
+
+    ${DSL | upper}
+
+  </section>
+</template>
